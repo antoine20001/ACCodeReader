@@ -1,0 +1,6 @@
+framework module Pods_ACCodeReader_Example {
+  umbrella header "Pods-ACCodeReader_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

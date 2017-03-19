@@ -1,0 +1,16 @@
+PODS:
+  - ACCodeReader (0.1.0)
+
+DEPENDENCIES:
+  - ACCodeReader (from `../`)
+
+EXTERNAL SOURCES:
+  ACCodeReader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ACCodeReader: 3c5da6ba05fa3941f3e6fe1941ad1fc0b8bfb5c0
+
+PODFILE CHECKSUM: 09c663ae3d8f6d4143c10db256d6d36ecb13410f
+
+COCOAPODS: 1.2.0.rc.1

@@ -1,0 +1,6 @@
+framework module ACCodeReader {
+  umbrella header "ACCodeReader-umbrella.h"
+
+  export *
+  module * { export * }
+}
