@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ACCodeReader_Example' do
+  pod 'ACCodeReader', :path => '../'
+
+  target 'ACCodeReader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
