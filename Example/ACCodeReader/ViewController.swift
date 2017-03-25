@@ -24,11 +24,11 @@ class ViewController: UIViewController, ACCodeReaderViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func findBarcodeEAN13(_ code: String) {
+    func codeReaderFindBarcodeEAN13(_ code: String) {
         
     }
     
-    func scanningNotPossible() {
+    func codeReaderScanningNotPossible() {
         
     }
 

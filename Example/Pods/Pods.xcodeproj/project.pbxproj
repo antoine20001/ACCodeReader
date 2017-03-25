@@ -14,7 +14,6 @@
 		4C4CC326425EC2C88EE2D926FAA52A99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		54CE5692458E2F37890AABE9AE007B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		6363580891ED17BEBCC13166146BA165 /* ACCodeReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6790DC88FC9EC4B983E861E716608 /* ACCodeReader-dummy.m */; };
-		64314640DC4E9519B2A07995F792FD3A /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431B1C645471806216818D2A62E56CE6 /* ReplaceMe.swift */; };
 		71EB04051E8684F900E1C069 /* ACCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB04041E8684F900E1C069 /* ACCodeReaderView.swift */; };
 		C6987D81E7EDD8CB3791865B8F2C9DAB /* Pods-ACCodeReader_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75448C56A42D0DAECBFBFA8353CB9FCF /* Pods-ACCodeReader_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2F730D491CD50575ACCEA2119019BC4 /* Pods-ACCodeReader_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87661526E956CF89DE86D921A649F76E /* Pods-ACCodeReader_Tests-dummy.m */; };
@@ -39,7 +38,6 @@
 		1AF940C2A7CD5B5C81F6D10BECD1A867 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CB6790DC88FC9EC4B983E861E716608 /* ACCodeReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACCodeReader-dummy.m"; sourceTree = "<group>"; };
 		3F88B54DAAFAEDFC2F3B2914F076D5CC /* Pods-ACCodeReader_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ACCodeReader_Tests-resources.sh"; sourceTree = "<group>"; };
-		431B1C645471806216818D2A62E56CE6 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		5660944F8959BEF423C8DD5944B9E639 /* Pods-ACCodeReader_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ACCodeReader_Example-dummy.m"; sourceTree = "<group>"; };
 		60DFE85B3E9FB54B24A8A7A15836DD97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61EBB47C1943B66BFF88217F9682A44E /* Pods-ACCodeReader_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ACCodeReader_Tests.modulemap"; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 		6BD205C4677E6C907FF9BE8C03468BB8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				431B1C645471806216818D2A62E56CE6 /* ReplaceMe.swift */,
 				71EB04041E8684F900E1C069 /* ACCodeReaderView.swift */,
 			);
 			path = Classes;
@@ -350,7 +347,6 @@
 			files = (
 				6363580891ED17BEBCC13166146BA165 /* ACCodeReader-dummy.m in Sources */,
 				71EB04051E8684F900E1C069 /* ACCodeReaderView.swift in Sources */,
-				64314640DC4E9519B2A07995F792FD3A /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

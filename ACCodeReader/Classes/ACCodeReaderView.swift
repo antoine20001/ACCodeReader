@@ -11,8 +11,8 @@ import UIKit
 import AVFoundation
 
 public protocol ACCodeReaderViewDelegate: class {
-    func findBarcodeEAN13(_ code: String)
-    func scanningNotPossible()
+    func codeReaderFindBarcodeEAN13(_ code: String)
+    func codeReaderScanningNotPossible()
 }
 
 open class ACCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
@@ -59,7 +59,7 @@ open class ACCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
         if (session.canAddInput(videoInput)) {
             session.addInput(videoInput)
         } else {
-            delegate?.scanningNotPossible()
+            delegate?.codeReaderScanningNotPossible()
         }
     }
     
@@ -78,7 +78,7 @@ open class ACCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
             metadataOutput.metadataObjectTypes = [AVMetadataObjectTypeEAN13Code]
             
         } else {
-            delegate?.scanningNotPossible()
+            delegate?.codeReaderScanningNotPossible()
         }
     }
     
@@ -103,7 +103,7 @@ open class ACCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
             let barcodeReadable = barcodeData as? AVMetadataMachineReadableCodeObject
             if let readableCode = barcodeReadable {
                 // Send the barcode as a string to findBarcodeEAN13()
-                delegate?.findBarcodeEAN13(readableCode.stringValue)
+                delegate?.codeReaderFindBarcodeEAN13(readableCode.stringValue)
             }
             
             // Vibrate the device to give the user some feedback.
