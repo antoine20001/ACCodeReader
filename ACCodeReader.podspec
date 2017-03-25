@@ -23,11 +23,11 @@ Currently, you can scan :
 - EAN13
                        DESC
 
-  s.homepage         = 'https://github.com/antoine.cointepas@orange.fr/ACCodeReader'
+  s.homepage         = 'https://github.com/antoine20001/ACCodeReader'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'antoine.cointepas@orange.fr' => 'antoine.cointepas@orange.fr' }
-  s.source           = { :git => 'https://github.com/antoine.cointepas@orange.fr/ACCodeReader.git', :tag => s.version.to_s }
+  s.author           = { 'antoine20001' => 'antoine.cointepas@orange.fr' }
+  s.source           = { :git => 'https://github.com/antoine20001/ACCodeReader.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/antoine20001'
 
   s.ios.deployment_target = '8.0'
