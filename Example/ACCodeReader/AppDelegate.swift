@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ACCodeReader
 //
-//  Created by antoine.cointepas@orange.fr on 03/19/2017.
+//  Created by antoine.cointepas@orange.fr on 03/25/2017.
 //  Copyright (c) 2017 antoine.cointepas@orange.fr. All rights reserved.
 //
 

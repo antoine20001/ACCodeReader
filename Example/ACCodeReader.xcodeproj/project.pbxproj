@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05590F02A242252788F14FBA /* Pods_ACCodeReader_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B16EDD51FB0BC5F436AB8CC /* Pods_ACCodeReader_Tests.framework */; };
+		18FE25949B8E6F1DA19066E1 /* Pods_ACCodeReader_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9ADFDC4CF2A84F85695755 /* Pods_ACCodeReader_Example.framework */; };
+		3FB3770859D28A813C177A0B /* Pods_ACCodeReader_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3564D4D3F35E6C349E95302 /* Pods_ACCodeReader_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		A0DB470FB1815726851B541C /* Pods_ACCodeReader_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24361F7E15C0B6A09D8BB71B /* Pods_ACCodeReader_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		039F396F68946DD17E03791F /* Pods-ACCodeReader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCodeReader_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACCodeReader_Tests/Pods-ACCodeReader_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		24112AC7AC07655AAAFC1032 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		24361F7E15C0B6A09D8BB71B /* Pods_ACCodeReader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACCodeReader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38BBB2699BCEB138B76DFE12 /* ACCodeReader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ACCodeReader.podspec; path = ../ACCodeReader.podspec; sourceTree = "<group>"; };
-		4B16EDD51FB0BC5F436AB8CC /* Pods_ACCodeReader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACCodeReader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F2722D66CF5FDE1FBD8CB4A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		495615DAC013B8B12395DBE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ACCodeReader_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACCodeReader_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,9 +39,14 @@
 		607FACE51AFB9204008FA782 /* ACCodeReader_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACCodeReader_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8573A07B8444F52F316DA59F /* Pods-ACCodeReader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCodeReader_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACCodeReader_Example/Pods-ACCodeReader_Example.release.xcconfig"; sourceTree = "<group>"; };
-		863437DC8F131F94F5D2D336 /* Pods-ACCodeReader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCodeReader_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACCodeReader_Example/Pods-ACCodeReader_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DBDF9094FF1605AC9AB21A4A /* Pods-ACCodeReader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCodeReader_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACCodeReader_Tests/Pods-ACCodeReader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EE165E655BBAE03710AD6E1 /* Pods-ACCodeReader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCodeReader_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACCodeReader_Example/Pods-ACCodeReader_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		799A57E5FDF9CBEBF5A80E47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8865F6FEF04D294560088F8A /* ACCodeReader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACCodeReader.podspec; path = ../ACCodeReader.podspec; sourceTree = "<group>"; };
+		A08A07082FB5B5978AFF33FB /* Pods-ACCodeReader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCodeReader_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACCodeReader_Tests/Pods-ACCodeReader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE9ADFDC4CF2A84F85695755 /* Pods_ACCodeReader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACCodeReader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3044ECD4DC49969DE4CD75 /* Pods-ACCodeReader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCodeReader_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACCodeReader_Tests/Pods-ACCodeReader_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C3564D4D3F35E6C349E95302 /* Pods_ACCodeReader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACCodeReader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4C05FFE31E4ED4407F6AA3 /* Pods-ACCodeReader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCodeReader_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACCodeReader_Example/Pods-ACCodeReader_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0DB470FB1815726851B541C /* Pods_ACCodeReader_Example.framework in Frameworks */,
+				18FE25949B8E6F1DA19066E1 /* Pods_ACCodeReader_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,22 +62,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05590F02A242252788F14FBA /* Pods_ACCodeReader_Tests.framework in Frameworks */,
+				3FB3770859D28A813C177A0B /* Pods_ACCodeReader_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12AC3F8CEF65EFC9BE194596 /* Pods */ = {
+		27F1C82ABFCA3E4FA26EBF20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				863437DC8F131F94F5D2D336 /* Pods-ACCodeReader_Example.debug.xcconfig */,
-				8573A07B8444F52F316DA59F /* Pods-ACCodeReader_Example.release.xcconfig */,
-				DBDF9094FF1605AC9AB21A4A /* Pods-ACCodeReader_Tests.debug.xcconfig */,
-				039F396F68946DD17E03791F /* Pods-ACCodeReader_Tests.release.xcconfig */,
+				AE9ADFDC4CF2A84F85695755 /* Pods_ACCodeReader_Example.framework */,
+				C3564D4D3F35E6C349E95302 /* Pods_ACCodeReader_Tests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -87,8 +85,8 @@
 				607FACD21AFB9204008FA782 /* Example for ACCodeReader */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				12AC3F8CEF65EFC9BE194596 /* Pods */,
-				F1B5C41CE9CE0C7D90FDBB0B /* Frameworks */,
+				D3ED4682B7BD8646A1CD309D /* Pods */,
+				27F1C82ABFCA3E4FA26EBF20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,20 +141,22 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				38BBB2699BCEB138B76DFE12 /* ACCodeReader.podspec */,
-				5F2722D66CF5FDE1FBD8CB4A /* README.md */,
-				24112AC7AC07655AAAFC1032 /* LICENSE */,
+				8865F6FEF04D294560088F8A /* ACCodeReader.podspec */,
+				799A57E5FDF9CBEBF5A80E47 /* README.md */,
+				495615DAC013B8B12395DBE2 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		F1B5C41CE9CE0C7D90FDBB0B /* Frameworks */ = {
+		D3ED4682B7BD8646A1CD309D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				24361F7E15C0B6A09D8BB71B /* Pods_ACCodeReader_Example.framework */,
-				4B16EDD51FB0BC5F436AB8CC /* Pods_ACCodeReader_Tests.framework */,
+				6EE165E655BBAE03710AD6E1 /* Pods-ACCodeReader_Example.debug.xcconfig */,
+				DE4C05FFE31E4ED4407F6AA3 /* Pods-ACCodeReader_Example.release.xcconfig */,
+				A08A07082FB5B5978AFF33FB /* Pods-ACCodeReader_Tests.debug.xcconfig */,
+				BA3044ECD4DC49969DE4CD75 /* Pods-ACCodeReader_Tests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ACCodeReader_Example" */;
 			buildPhases = (
-				0E67C0DF55E5BA882FB34BB9 /* [CP] Check Pods Manifest.lock */,
+				B49482A7E759726C3A4C6DA1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				696E876A3EF6D6BA05FBFB53 /* [CP] Embed Pods Frameworks */,
-				088DA2F7B8BA2B1D8D8D76F6 /* [CP] Copy Pods Resources */,
+				9CE20DE37A8CB24D3F4D2481 /* [CP] Embed Pods Frameworks */,
+				D5CC1BD5057EABFAA54C63ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ACCodeReader_Tests" */;
 			buildPhases = (
-				F2D6DE0448C028CAEDB8207B /* [CP] Check Pods Manifest.lock */,
+				06A29164945AA3E5C3533508 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				BDB295D80B595CE2D9AC1005 /* [CP] Embed Pods Frameworks */,
-				E4D007B9A0DB12A12E76CE6F /* [CP] Copy Pods Resources */,
+				A92F37EA6F34572233C138DD /* [CP] Embed Pods Frameworks */,
+				CF683A92A601F6354FAB9E28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = G7H3UC3MT4;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = G7H3UC3MT4;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -264,22 +266,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		088DA2F7B8BA2B1D8D8D76F6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACCodeReader_Example/Pods-ACCodeReader_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0E67C0DF55E5BA882FB34BB9 /* [CP] Check Pods Manifest.lock */ = {
+		06A29164945AA3E5C3533508 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,7 +281,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		696E876A3EF6D6BA05FBFB53 /* [CP] Embed Pods Frameworks */ = {
+		9CE20DE37A8CB24D3F4D2481 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,7 +296,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACCodeReader_Example/Pods-ACCodeReader_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BDB295D80B595CE2D9AC1005 /* [CP] Embed Pods Frameworks */ = {
+		A92F37EA6F34572233C138DD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,7 +311,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACCodeReader_Tests/Pods-ACCodeReader_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E4D007B9A0DB12A12E76CE6F /* [CP] Copy Pods Resources */ = {
+		B49482A7E759726C3A4C6DA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF683A92A601F6354FAB9E28 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,19 +341,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACCodeReader_Tests/Pods-ACCodeReader_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F2D6DE0448C028CAEDB8207B /* [CP] Check Pods Manifest.lock */ = {
+		D5CC1BD5057EABFAA54C63ED /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACCodeReader_Example/Pods-ACCodeReader_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -493,9 +495,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 863437DC8F131F94F5D2D336 /* Pods-ACCodeReader_Example.debug.xcconfig */;
+			baseConfigurationReference = 6EE165E655BBAE03710AD6E1 /* Pods-ACCodeReader_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G7H3UC3MT4;
 				INFOPLIST_FILE = ACCodeReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,9 +510,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8573A07B8444F52F316DA59F /* Pods-ACCodeReader_Example.release.xcconfig */;
+			baseConfigurationReference = DE4C05FFE31E4ED4407F6AA3 /* Pods-ACCodeReader_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G7H3UC3MT4;
 				INFOPLIST_FILE = ACCodeReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -521,8 +525,9 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBDF9094FF1605AC9AB21A4A /* Pods-ACCodeReader_Tests.debug.xcconfig */;
+			baseConfigurationReference = A08A07082FB5B5978AFF33FB /* Pods-ACCodeReader_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = G7H3UC3MT4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -536,13 +541,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACCodeReader_Example.app/ACCodeReader_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 039F396F68946DD17E03791F /* Pods-ACCodeReader_Tests.release.xcconfig */;
+			baseConfigurationReference = BA3044ECD4DC49969DE4CD75 /* Pods-ACCodeReader_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = G7H3UC3MT4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -552,6 +559,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACCodeReader_Example.app/ACCodeReader_Example";
 			};
 			name = Release;
 		};
