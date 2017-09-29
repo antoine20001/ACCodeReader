@@ -17,12 +17,22 @@ public protocol ACCodeReaderViewDelegate: class {
 
 open class ACCodeReaderView: UIView {
     
+    // Delay before re-enable scan after a successful scan
     public var startWaitDuration : Double = 3
-    public weak var delegate: ACCodeReaderViewDelegate?
     
+    public weak var delegate: ACCodeReaderViewDelegate?
+    var _activeRect : CGRect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+    var activeRect : CGRect = CGRect(x: 0, y: 0, width: 1.0, height: 1.0) {
+        didSet {
+            _activeRect = CGRect(x: (activeRect.origin.x/self.bounds.width),
+                                y: (activeRect.origin.y/self.bounds.height),
+                                width: (activeRect.size.width / self.bounds.width),
+                                height: (activeRect.size.height / self.bounds.height))
+        }
+    }
+    public var supportCodeType : [String] = []
     var session: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
-    public var supportCodeType : [String] = []
     
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -77,6 +87,7 @@ open class ACCodeReaderView: UIView {
             
             // Set barcode type for which to scan: EAN-13.
             metadataOutput.metadataObjectTypes = self.supportCodeType
+            metadataOutput.rectOfInterest = _activeRect
             
         } else {
             self.delegate?.errorDetected(error: NSError(domain: "ACCodeReader", code: 1, userInfo: ["message": "ACCodeReaderView createVideoOutput ScanningNotPossible"]))

@@ -24,14 +24,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ic-pV-B43" customClass="ACCodeReaderView" customModule="ACCodeReader">
-                                <rect key="frame" x="68" y="214.5" width="239" height="239"/>
+                                <rect key="frame" x="16" y="162.5" width="343" height="343"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6ic-pV-B43" secondAttribute="height" multiplier="1:1" id="UCz-5b-faU"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcH-nW-6L1">
-                                <rect key="frame" x="0.0" y="473.5" width="375" height="173.5"/>
+                                <rect key="frame" x="0.0" y="525.5" width="375" height="121.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,9 +41,9 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="TcH-nW-6L1" secondAttribute="trailing" id="I7h-jo-jwO"/>
                             <constraint firstItem="TcH-nW-6L1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Upu-aL-YsZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6ic-pV-B43" secondAttribute="trailing" constant="52" id="X2T-9K-gh0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6ic-pV-B43" secondAttribute="trailing" id="X2T-9K-gh0"/>
                             <constraint firstItem="TcH-nW-6L1" firstAttribute="top" secondItem="6ic-pV-B43" secondAttribute="bottom" constant="20" id="lT6-6v-4m4"/>
-                            <constraint firstItem="6ic-pV-B43" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="52" id="nJa-Y3-qDr"/>
+                            <constraint firstItem="6ic-pV-B43" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nJa-Y3-qDr"/>
                             <constraint firstItem="6ic-pV-B43" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="rMB-Y1-PnW"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TcH-nW-6L1" secondAttribute="bottom" constant="20" id="x9q-VG-JGm"/>
                         </constraints>

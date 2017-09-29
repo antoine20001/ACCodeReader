@@ -19,12 +19,8 @@ class ViewController: UIViewController, ACCodeReaderViewDelegate {
         super.viewDidLoad()
         readerView.delegate = self
         readerView.supportCodeType = [AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeQRCode, AVMetadataObjectTypeDataMatrixCode, AVMetadataObjectTypeUPCECode, AVMetadataObjectTypeAztecCode, AVMetadataObjectTypeITF14Code, AVMetadataObjectTypeCode39Code, AVMetadataObjectTypeCode93Code, AVMetadataObjectTypePDF417Code, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeCode39Mod43Code, AVMetadataObjectTypeInterleaved2of5Code]
+//        readerView.activeRect = CGRect(x: 0, y: readerView.frame.size.height/2, width: readerView.frame.size.width, height: readerView.frame.size.height)
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func didReceiveCode(code: String, codeType: String) {
