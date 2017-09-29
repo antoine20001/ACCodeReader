@@ -11,17 +11,18 @@ import UIKit
 import AVFoundation
 
 public protocol ACCodeReaderViewDelegate: class {
-    func codeReaderFindBarcodeEAN13(_ code: String)
-    func codeReaderScanningNotPossible()
+    func didReceiveCode(code: String, codeType: String)
+    func errorDetected(error: NSError)
 }
 
-open class ACCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
+open class ACCodeReaderView: UIView {
     
     public var startWaitDuration : Double = 3
-    open weak var delegate: ACCodeReaderViewDelegate?
+    public weak var delegate: ACCodeReaderViewDelegate?
     
     var session: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
+    public var supportCodeType : [String] = []
     
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -59,7 +60,7 @@ open class ACCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
         if (session.canAddInput(videoInput)) {
             session.addInput(videoInput)
         } else {
-            delegate?.codeReaderScanningNotPossible()
+            self.delegate?.errorDetected(error: NSError(domain: "ACCodeReader", code: 0, userInfo: ["message": "ACCodeReaderView createVideoInput ScanningNotPossible"]))
         }
     }
     
@@ -75,10 +76,10 @@ open class ACCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
             metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             
             // Set barcode type for which to scan: EAN-13.
-            metadataOutput.metadataObjectTypes = [AVMetadataObjectTypeEAN13Code]
+            metadataOutput.metadataObjectTypes = self.supportCodeType
             
         } else {
-            delegate?.codeReaderScanningNotPossible()
+            self.delegate?.errorDetected(error: NSError(domain: "ACCodeReader", code: 1, userInfo: ["message": "ACCodeReaderView createVideoOutput ScanningNotPossible"]))
         }
     }
     
@@ -96,29 +97,9 @@ open class ACCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
         }
     }
     
-    open func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
-        // Get the first object from the metadataObjects array.
-        if let barcodeData = metadataObjects.first {
-            // Turn it into machine readable code
-            let barcodeReadable = barcodeData as? AVMetadataMachineReadableCodeObject
-            if let readableCode = barcodeReadable {
-                // Send the barcode as a string to findBarcodeEAN13()
-                delegate?.codeReaderFindBarcodeEAN13(readableCode.stringValue)
-            }
-            
-            // Vibrate the device to give the user some feedback.
-            vibrate()
-            
-            // Avoid a very buzzy device.
-            session.stopRunning()
-
-            DispatchQueue.main.asyncAfter(deadline: .now() + startWaitDuration, execute: {
-                self.session.startRunning()
-            })
-        }
-    }
     
-    private func vibrate() {
+    
+    public func vibrate() {
         if #available(iOS 10.0, *) {
             if let value = UIDevice.current.value(forKey: "_feedbackSupportLevel") as? Int, value == 2 {
                 let feedbackGenerator = UIImpactFeedbackGenerator(style: .light)
@@ -129,6 +110,27 @@ open class ACCodeReaderView: UIView, AVCaptureMetadataOutputObjectsDelegate {
             }
         } else {
             AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+        }
+    }
+}
+
+extension ACCodeReaderView: AVCaptureMetadataOutputObjectsDelegate {
+    open func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+        // Get the first object from the metadataObjects array.
+        if let barcodeData = metadataObjects.first as? AVMetadataMachineReadableCodeObject  {
+            self.delegate?.didReceiveCode(code: barcodeData.stringValue, codeType: barcodeData.type)
+
+            // Vibrate the device to give the user some feedback.
+            self.vibrate()
+            
+            // Avoid a very buzzy device.
+            session.stopRunning()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + startWaitDuration, execute: {
+                self.session.startRunning()
+            })
+        } else {
+            self.delegate?.errorDetected(error: NSError(domain: "ACCodeReaderView", code: 2, userInfo: ["message": "AVCaptureMetadataOutputObjectsDelegate captureOutput error"]))
         }
     }
 }

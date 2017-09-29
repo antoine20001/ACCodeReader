@@ -8,14 +8,17 @@
 
 import UIKit
 import ACCodeReader
+import AVFoundation
 
 class ViewController: UIViewController, ACCodeReaderViewDelegate {
 
     @IBOutlet weak var readerView: ACCodeReaderView!
+    @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         readerView.delegate = self
+        readerView.supportCodeType = [AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeQRCode, AVMetadataObjectTypeDataMatrixCode, AVMetadataObjectTypeUPCECode, AVMetadataObjectTypeAztecCode, AVMetadataObjectTypeITF14Code, AVMetadataObjectTypeCode39Code, AVMetadataObjectTypeCode93Code, AVMetadataObjectTypePDF417Code, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeCode39Mod43Code, AVMetadataObjectTypeInterleaved2of5Code]
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -24,13 +27,16 @@ class ViewController: UIViewController, ACCodeReaderViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func codeReaderFindBarcodeEAN13(_ code: String) {
-        
+    func didReceiveCode(code: String, codeType: String) {
+        if codeType == AVMetadataObjectTypeEAN13Code {
+            resultLabel.text = "EAN13 : \(code)"
+        } else {
+            resultLabel.text = "\(codeType) : \(code)"
+        }
     }
     
-    func codeReaderScanningNotPossible() {
-        
+    func errorDetected(error: NSError) {
+        resultLabel.text = "\(error.description)"
     }
-
 }
 

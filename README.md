@@ -20,9 +20,13 @@ it, simply add the following line to your Podfile:
 pod "ACCodeReader"
 ```
 
+Add a list of supported codes to your readerView:
+```ruby
+readerView.supportCodeType = [AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeQRCode, AVMetadataObjectTypeDataMatrixCode, AVMetadataObjectTypeUPCECode, AVMetadataObjectTypeAztecCode, AVMetadataObjectTypeITF14Code, AVMetadataObjectTypeCode39Code, AVMetadataObjectTypeCode93Code, AVMetadataObjectTypePDF417Code, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeCode39Mod43Code, AVMetadataObjectTypeInterleaved2of5Code]
+```
 ## Author
 
-antoine.cointepas@orange.fr, antoine.cointepas@orange.fr
+antoinecointepas@gmail.com
 
 ## License
 
